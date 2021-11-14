@@ -1,0 +1,15 @@
+/home/daniel/mysource/myrepo/EmailGenerator/obj/Debug/net6.0/EmailGenerator.csproj.AssemblyReference.cache
+/home/daniel/mysource/myrepo/EmailGenerator/obj/Debug/net6.0/EmailGenerator.GeneratedMSBuildEditorConfig.editorconfig
+/home/daniel/mysource/myrepo/EmailGenerator/obj/Debug/net6.0/EmailGenerator.AssemblyInfoInputs.cache
+/home/daniel/mysource/myrepo/EmailGenerator/obj/Debug/net6.0/EmailGenerator.AssemblyInfo.cs
+/home/daniel/mysource/myrepo/EmailGenerator/obj/Debug/net6.0/EmailGenerator.csproj.CoreCompileInputs.cache
+/home/daniel/mysource/myrepo/EmailGenerator/bin/Debug/net6.0/EmailGenerator
+/home/daniel/mysource/myrepo/EmailGenerator/bin/Debug/net6.0/EmailGenerator.deps.json
+/home/daniel/mysource/myrepo/EmailGenerator/bin/Debug/net6.0/EmailGenerator.runtimeconfig.json
+/home/daniel/mysource/myrepo/EmailGenerator/bin/Debug/net6.0/EmailGenerator.dll
+/home/daniel/mysource/myrepo/EmailGenerator/bin/Debug/net6.0/ref/EmailGenerator.dll
+/home/daniel/mysource/myrepo/EmailGenerator/bin/Debug/net6.0/EmailGenerator.pdb
+/home/daniel/mysource/myrepo/EmailGenerator/obj/Debug/net6.0/EmailGenerator.dll
+/home/daniel/mysource/myrepo/EmailGenerator/obj/Debug/net6.0/ref/EmailGenerator.dll
+/home/daniel/mysource/myrepo/EmailGenerator/obj/Debug/net6.0/EmailGenerator.pdb
+/home/daniel/mysource/myrepo/EmailGenerator/obj/Debug/net6.0/EmailGenerator.genruntimeconfig.cache
