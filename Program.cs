@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text.RegularExpressions;
 using recordIem.EmailGenerator.Exceptions;
 
 namespace recorditem.EmailGenerator
@@ -29,11 +30,26 @@ public class Program {
                 
             
                 if (args[2] == "-d") {
-                    domainName = args[3];    
+                    if(isValidDomain(args[3])) {
+                            
+                            domainName = args[3];
+
+                    } else {
+
+                        throw new InvalidDomainException("The domain name supplied is not valid");
+                    }
                 } 
                 
                 if(args[0] == "-d") {
-                    domainName = args[1];
+                    if(isValidDomain(args[1])) {
+                            
+                            domainName = args[1];
+
+                    } else {
+
+                       throw new InvalidDomainException("The domain name supplied is not valid");         
+
+                    }
                 }
                 
                 if (args[2] == "-c") {
@@ -62,6 +78,7 @@ public class Program {
         Console.WriteLine($"Total record items is {totalEmails}");
 
 #endif
+
     } catch (InvalidArgumentException ex) {
 
         Console.WriteLine(ex.Message);
@@ -74,12 +91,31 @@ public class Program {
 
         writeErrorMessage();
 
-    }  
+    }  catch (InvalidDomainException ex) {
+
+        Console.WriteLine(ex.Message);
+
+        writeErrorMessage();
+
+    }
+
         
 }
 
     private static void writeErrorMessage() {
         Console.WriteLine("Email Phishing Report Generator - Usage .\\EmailGenerator -c <total emails> -d <domain name>");
+    }
+
+    private static bool isValidDomain(String domainName) {
+        
+        bool result = false;
+        
+        Regex regex = new Regex(@"^[a-zA-Z0-9][a-zA-Z0-9-_]{0,61}[a-zA-Z0-9]{0,1}\.([a-zA-Z]{1,6}|[a-zA-Z0-9-]{1,30}\.[a-zA-Z]{2,3})$"); 
+                        
+        result = regex.IsMatch(domainName);
+
+        return result;
+
     }
     
 }}
