@@ -83,22 +83,19 @@ public class Program {
 
         Console.WriteLine(ex.Message);
 
-        writeErrorMessage();
-
     } catch (InvalidAmountArgumentsException ex) {
 
         Console.WriteLine(ex.Message);
-
-        writeErrorMessage();
 
     }  catch (InvalidDomainException ex) {
 
         Console.WriteLine(ex.Message);
 
+    } finally {
+
         writeErrorMessage();
 
     }
-
         
 }
 
